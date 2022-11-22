@@ -17,7 +17,7 @@ RUN npm install
 COPY . /app 
 
 #Expose server at port ( accessible outside of container)
-EXPOSE 9090
+EXPOSE 3000
 
 #Start app 
 CMD ["node", "server.js"]
