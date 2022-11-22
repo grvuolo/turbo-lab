@@ -64,3 +64,27 @@ print(token)
 python3 api-login.py
 JSESSIONID=node01b2wvjzl4s8vv145cvzwnp2hkw245.node0
 ``
+
+
+
+
+var express = require('express');
+var multer  = require('multer');
+var app = express();
+
+app.configure(function(){
+  app.set('port', process.env.PORT || 3000);
+  app.use(multer());
+});
+
+app.post('/', function (req, res) {
+  var from = req.body.from;
+  var text = req.body.text;
+});
+
+var server = app.listen(app.get('port'), function() {
+  console.log('Listening on port %d', server.address().port);
+});
+~                                                                                                                                                
+~                                                                                                                                                
+~               
